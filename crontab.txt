@@ -1,0 +1,1 @@
+0 5 * * * root python3 /workspace/scraper/scrape.py >> /workspace/scraper/scrape.log 2>&1

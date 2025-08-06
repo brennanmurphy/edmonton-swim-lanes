@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  lane-tracker:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - TZ=America/Edmonton
+    volumes:
+      - ./:/workspace
+    stdin_open: true
+    tty: true
